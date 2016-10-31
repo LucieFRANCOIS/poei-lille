@@ -1,0 +1,74 @@
+<doctype html>
+
+<head>
+</head>
+<body>
+
+<p><b><u><big>Remplir le formulaire</big></u></b></p>
+
+<form method="post" action="traitement.php">
+<p>
+
+<label for="nom">Quel est votre nom ?</label> 
+<input type="text" name="nom" id="nom" />
+
+<label for="pass">Quel est votre mot de passe ?</label>
+<input type="password" name="pass" id="pass" />
+
+<label for="mail">Quelle est votre adresse email ?</label>
+<input type="email" name="mail" id="mail" />
+
+<label for="site">Avez vous une URL ?</label>
+<input type="url" name="site" id="site" />
+
+<label for="telephone">Saisir votre numero de telephone :</label>
+<input type="tel" name="telephone" id="telephone" />
+
+<br/><br/><label for="ameliorer">Avez-vous des idees pour ameliorer mon site ?</label><br />
+<textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+Ameliorer ton site?!
+Mais enfin, il est tellement genial qu'il n'est pas necessaire de l'ameliorer!
+</textarea>
+
+<br/><br/><label for="recherche">Rechercher :</label>
+<input type="search" name="recherche" id="recherche" />
+
+<p><b><u><big>Les gouts alimentaires</big></u></b></p>
+
+Cochez les aliments que vous aimez manger :<br/>
+<input type="checkbox" name="frites" id="frites" />
+<label for="frites"><em>Frites</em></label><br />
+
+<input type="checkbox" name="legumes" id="legumes" />
+<label for="legumes"><em>Legumes</em></label><br />
+
+<input type="checkbox" name="viande" id="viande" />
+<label for="viande"><em>Viande</em></label><br />
+
+<input type="checkbox" name="fruits" id="fruits" />
+<label for="fruits"><em>Fruits</em></label><br />
+
+<p><b><u><big>Votre pays</big></u></b></p>
+
+<label for="pays">Dans quel pays habitez-vous ?</label><br />
+<select name="pays" id="pays"
+<optgroup label="Europe">
+<option value="france">France</option>
+<option value="espagne">Espagne</option>
+<option value="italie">Italie</option>
+<option value="angleterre">Angleterre</option>
+</optgroup>
+<optgroup label="Amerique">
+<option value="canada">Canada</option>
+<option value="usa">USA</option>
+</optgroup>
+<optgroup label="Asie">
+<option value="chine">Chine</option>
+<option value="japon">Japon</option>
+</optgroup>
+</select>
+
+</p>
+</form>
+
+</body>
